@@ -6,3 +6,53 @@ body {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
+
+blockquote {
+  font-size: 2rem;
+  color: $clr-black;
+}
+
+blockquote::before {
+  content: open-quote;
+}
+
+blockquote::after {
+  content: close-quote;
+}
+
+a[data-tool-tip] {
+  position: relative;
+}
+
+a[data-tool-tip]::after {
+  content: attr(data-tool-tip);
+  display: block;
+  position: absolute;
+  background-color: $clr-gray;
+  padding: 1em 3em;
+  color: white;
+  border-radius: 5px;
+  font-size: 0.8em;
+  bottom: 0;
+  left: 0;
+  white-space: nowrap;
+  transform: scale(0);
+  transition: transform ease-out 150ms, bottom ease-out 150ms;
+}
+
+a[data-tool-tip]:hover::after {
+  transform: scale(1);
+  bottom: 100%;
+}
+
+.decorations {
+  padding: 7em;
+}
+
+.section-with-deco::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f0e7';
+  display: block;
+  margin-bottom: 5px;
+}

@@ -49,7 +49,7 @@
 
       &-text {
         text-align: left;
-
+        margin-bottom: 1.5rem;
         @include respond(tab-port) {
           text-align: left;
         }
@@ -76,4 +76,12 @@
       }
     }
   }
+}
+.content-header::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 5em;
+  background: darkgray;
+  margin: 0.25em;
 }

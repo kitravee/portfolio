@@ -46,10 +46,14 @@
     <div id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title" class="load-hidden">
-          Hi, my name is <span class="text-color-main">Kitravee</span>
+  
+          Hello there, my name is 
           <br />
-          A self-taught software developer <br />
+          <span class="text-color-main ">Kitravee Siwatkittisuk</span> 
+          <br />
+          and I come from Thailand
         </h1>
+
         <p class="hero-cta" class="load-hidden">
           <a class="cta-btn cta-btn--hero" href="#about">More Information</a>
         </p>
@@ -65,7 +69,7 @@
         </h2>
         <div class="row about-wrapper">
           <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__image" style="filter: grayscale(100%);">
+            <div class="about-wrapper__image" style="filter: grayscale(25%);">
               <img
                 class="img-fluid rounded shadow-lg"
                 height="auto"
@@ -74,28 +78,39 @@
                 alt="Profile Image"
               />
             </div>
+ 
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info">
+              <h2 class="about-wrapper__info-text"> I have been in love with the internet <br> when I was young, I studied in Computer engineering field since 2014 and worked as a Software engineer since 2018.</h2>
               <p class="about-wrapper__info-text">
-                Hi, my name is Kitravee, you can call me Trong
+                Up until now, I am a Software Engineer, Focus on Full-Stack Developer, coding both back-end and front-end. I love open-source and community development.
               </p>
               <p class="about-wrapper__info-text">
-                A Self-taught software developer, focus on Full-Stack Developer
+                I am a dreamer who tries to make things possible.
               </p>
               <p class="about-wrapper__info-text">
-                I like to make the software more effectively. learning every day to grow professionally in the Web development field.
-              </p>
-              <p class="about-wrapper__info-text">
-                Please feel free to contact me if you need any further information.
+                Feel free to reach me on my other personal accounts.
               </p>
               <span class="d-flex mt-3">
-                <a target="_blank" class="cta-btn cta-btn--resume" href="https://drive.google.com/drive/folders/1sZwsZ4PJr1BfqYACtnxjYJYj6X8H262e?usp=sharing">
-                  View Resume
-                </a>
+
+                <a target="_blank"
+                href="mailto:example@email.com"
+              >
+                <i class="fa fa-envelope-o fa-inverse cta-btn cta-btn--resume"></i>
+              </a>
+              &nbsp;&nbsp;
+              <a  href="tel:+66944645351">
+                <i class="fa fa-phone-square fa-inverse cta-btn cta-btn--resume"></i>
+              </a>
+              &nbsp;&nbsp;
+              <a href="https://www.linkedin.com/in/kitravee-siwatkittisuk/">
+                <i class="fa fa-linkedin fa-inverse cta-btn cta-btn--resume"></i>
+              </a>
+           
                 &nbsp;&nbsp;
-                <a target="_blank" class="cta-btn cta-btn--resume" href="#contact">
-                  Contract me
+                <a target="_blank" class="cta-btn cta-btn--resume" href="#projects">
+                  Projects
                 </a>
               </span>
               
@@ -118,6 +133,35 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">KitShop</h3>
+                <div>
+                  <p class="mb-4">
+                    KitShop fashion shopping application
+                    <br/><br/>
+                    Progressive web application and Single page web application that developed by React-Redux-Sagas, Firebase, StripeAPI and FacebookAPI
+                  </p>
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://kitshop-kitravee.herokuapp.com/">
+                  See Live
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="https://kitshop-kitravee.herokuapp.com/" target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/kitshop.png" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
                 <h3 class="project-wrapper__text-title">KitCamp</h3>
                 <div>
                   <p class="mb-4">
@@ -130,14 +174,14 @@
                 <a target="_blank" class="cta-btn cta-btn--hero" href="https://kitcamp-kitravee.herokuapp.com/">
                   See Live
                 </a>
-                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/kitravee/kitcamp">
+                <!-- <a target="_blank" class="cta-btn text-color-main" href="https://github.com/kitravee/kitcamp">
                   Source Code
-                </a>
+                </a> -->
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
+                <a href="https://kitcamp-kitravee.herokuapp.com/" target="_blank">
                   <div data-tilt class="thumbnail rounded">
                     <img class="img-fluid" src="./assets/kitcamp.png" />
                   </div>
@@ -148,15 +192,13 @@
           <!-- /END Project -->
 
           <!-- Each .row is a project -->
-
-
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text">
                 <h3 class="project-wrapper__text-title">Smart brain</h3>
                 <div>
                   <p class="mb-4">
-                    A Face Recognition App allows you to push the image and it will return you detection of faces in any image.
+                    A Face Recognition application that allows you to push the image and it will return you detection of faces in any image.
                     <br/><br/>
                     This Application was developed by using React, Express.js, PosgreSQL, Redis and Clarifai's API.
                   </p>
@@ -164,14 +206,14 @@
                 <a target="_blank" class="cta-btn cta-btn--hero" href="https://smart-brain-kitravee.herokuapp.com/">
                   See Live
                 </a>
-                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/kitravee/smart-brain-api">
+                <!-- <a target="_blank" class="cta-btn text-color-main" href="https://github.com/kitravee/smart-brain-api">
                   Source Code
-                </a>
+                </a> -->
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
+                <a href="https://smart-brain-kitravee.herokuapp.com/" target="_blank">
                   <div data-tilt class="thumbnail rounded">
                     <img class="img-fluid" src="./assets/smart-brain.png" />
                   </div>
@@ -217,32 +259,7 @@
     </section>
     <!-- /END Projects Section -->
 
-    <!-- **** Contact Section **** -->
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title">
-          Contact
-        </h2>
-        <div class="contact-wrapper">
-          <p class="contact-wrapper__text">
-            Nice to meet you 😃💕
-          </p>
-          <a target="_blank"
-            href="mailto:example@email.com"
-          >
-            <i class="fa fa-envelope-o fa-inverse cta-btn cta-btn--resume"></i>
-          </a>
-          <a href="tel:+66944645351">
-            <i class="fa fa-phone-square fa-inverse cta-btn cta-btn--resume"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/kitravee-siwatkittisuk/">
-            <i class="fa fa-linkedin fa-inverse cta-btn cta-btn--resume"></i>
-          </a>
-           
-        </div>
-      </div>
-    </section>
-    <!-- /END Contact Section -->
+
 
     <!-- **** Footer Section **** -->
     <footer class="footer navbar-static-bottom">
